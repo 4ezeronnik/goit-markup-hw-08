@@ -21,24 +21,28 @@
 }
 
 .characteristics {
-  display: flex;
+  display: block;
 
-  & .characteristics__item + .characteristics__item {
-    margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    & .characteristics__item + .characteristics__item {
+      margin-left: 30px;
+    }
   }
-}
 
-.characteristics__paragraph {
-  color: $primary-text-color;
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-}
+  .characteristics__paragraph {
+    color: $primary-text-color;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 
-.characteristics__title {
-  color: $title-text-color;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  .characteristics__title {
+    color: $title-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }

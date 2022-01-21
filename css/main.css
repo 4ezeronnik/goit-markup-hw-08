@@ -366,24 +366,29 @@ ul {
 }
 
 .characteristics {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
-.characteristics .characteristics__item + .characteristics__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .characteristics {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .characteristics .characteristics__item + .characteristics__item {
+    margin-left: 30px;
+  }
 }
 
-.characteristics__paragraph {
+.characteristics .characteristics__paragraph {
   color: #757575;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.7;
 }
 
-.characteristics__title {
+.characteristics .characteristics__title {
   color: #212121;
   font-size: 14px;
   line-height: 1.14;

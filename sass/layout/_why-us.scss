@@ -1,0 +1,47 @@
+/* Секция "why-us-section" */
+.why-us-section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.why-us-section__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: $title-text-color;
+  margin-bottom: 50px;
+}
+
+.characteristics__box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: $background-color;
+  border-radius: 4px;
+}
+
+.characteristics {
+  display: flex;
+
+  & .characteristics__item + .characteristics__item {
+    margin-left: 30px;
+  }
+}
+
+.characteristics__paragraph {
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.characteristics__title {
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

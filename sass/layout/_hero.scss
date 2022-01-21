@@ -5,11 +5,16 @@
   color: $primary-white-color;
   background-color: #2f303a transparent;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   text-align: center;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 26.43px;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero-section {
@@ -34,12 +39,4 @@
   margin-right: auto;
 
   text-align: center;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.4;
-  text-align: center;
-  color: $title-text-color;
-  margin-bottom: 50px;
 }

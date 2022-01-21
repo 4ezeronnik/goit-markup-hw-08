@@ -49,6 +49,20 @@ img {
   color: #2196f3;
 }
 
+.section-title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
+
 /* Reset */
 h1,
 h2,
@@ -283,11 +297,18 @@ ul {
   color: #ffffff;
   background-color: #2f303a transparent;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   text-align: center;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 26.43px;
+  margin-bottom: 26px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .hero-section {
@@ -310,26 +331,17 @@ ul {
   text-align: center;
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.4;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
 /* Секция "why-us-section" */
 .why-us-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.why-us-section__title {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .why-us-section {
+    padding-top: 94px;
+    padding-top: 94px;
+  }
 }
 
 .characteristics__box {
@@ -381,15 +393,14 @@ ul {
 
 /* Секция "our-work-section" */
 .our-work-section {
-  margin-bottom: 94px;
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
-.our-work-section__title {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
+@media screen and (max-width: 1199px) {
+  .our-work-section {
+    display: none;
+  }
 }
 
 .our-work-list__item {
@@ -428,14 +439,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
-}
-
-.our-team-section__title {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
 }
 
 .our-team-list__item {

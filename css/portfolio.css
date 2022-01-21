@@ -168,16 +168,17 @@ ul {
   fill: currentColor;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav .site-nav__item + .site-nav__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
+  }
+  .site-nav .site-nav__item + .site-nav__item {
+    margin-left: 50px;
+  }
 }
 
 .site-nav .link {
@@ -238,30 +239,27 @@ ul {
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
 }
 
-.auth-nav .auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .auth-nav .auth-nav__item + .auth-nav__item {
+    margin-left: 50px;
+  }
 }
 
 .auth-nav .link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: Roboto;
   font-weight: 500px;
   font-size: 14px;
@@ -269,26 +267,44 @@ ul {
   letter-spacing: 2%;
 }
 
+@media screen and (min-width: 1200px) {
+  .auth-nav .link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .site-nav__link.site-nav__link--active {
   color: #2196f3;
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 /* Works Portfolio */
@@ -423,26 +439,36 @@ ul {
 
 /* Подвал страницы / Футер */
 .footer-section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-section__container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .address-section {

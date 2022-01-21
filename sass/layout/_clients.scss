@@ -5,7 +5,11 @@
 }
 
 .clients-list {
+  @media screen and (max-width: 1200px) {
+    flex-wrap: nowrap;
+  }
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients-list__item {

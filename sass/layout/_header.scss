@@ -10,11 +10,13 @@
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 93px;
 
-  & .site-nav__item + .site-nav__item {
-    margin-left: 50px;
+    & .site-nav__item + .site-nav__item {
+      margin-left: 50px;
+    }
   }
 
   & .link {
@@ -74,16 +76,21 @@
 }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
 
-  & .auth-nav__item + .auth-nav__item {
-    margin-left: 50px;
+    & .auth-nav__item + .auth-nav__item {
+      margin-left: 50px;
+    }
   }
   & .link {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
     font-family: Roboto;
     font-weight: 500px;
     font-size: 14px;
@@ -97,9 +104,11 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 80px;

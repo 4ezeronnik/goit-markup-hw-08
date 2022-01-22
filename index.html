@@ -132,7 +132,21 @@
             <h2 class="section-title">Наша команда</h2>
             <ul class="list our-team-list">
                 <li class="our-team-list__item">
-                    <img src="images/img-4.jpg" alt="Игорь Демьяненко – Product Designer" width="270">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px)"
+                        srcset="./images/ihor-desktop-1x.jpg 1x,
+                        ./images/ihor-desktop-2x.jpg 2x" 
+                        >
+                        <source media="(min-width: 768px) and (max-width: 1199px)" 
+                        srcset="./images/ihor-tablet-1x.jpg 1x,
+                        ./images/ihor-tablet-2x.jpg 2x">
+                        <source media="(max-width: 767px)" 
+                        srcset="./images/ihor-mobile-1x.jpg 1x,
+                        ./images/ihor-mobile-2x.jpg 2x">
+                        <img src="./images/ihor-desktop-1x.jpg" alt="Игорь Демьяненко – Product Designer">
+                    </picture>
+
                     <h3 class="our-team-list__title">Игорь Демьяненко</h3> 
                     <p class="our-team-list__text">Product Designer</p> 
                     <ul class="our-team-contacts list">
@@ -168,7 +182,15 @@
                     </ul>
                 </li>
                 <li class="our-team-list__item">
-                    <img src="images/img-5.jpg" alt="Ольга Репина – Frontend Developer" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/olha-desktop-1x.jpg 1x,
+                                                ./images/olha-desktop-2x.jpg 2x">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/olha-tablet-1x.jpg 1x,
+                                                ./images/olha-tablet-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/olha-mobile-1x.jpg 1x,
+                                                ./images/olha-mobile-2x.jpg 2x">
+                            <img src="images/olha-desktop-1x.jpg" alt="Ольга Репина – Frontend Developer">
+                        </picture>
                     <h3 class="our-team-list__title">Ольга Репина</h3>
                     <p  class="our-team-list__text">Frontend Developer</p>
                     <ul class="our-team-contacts list">
@@ -204,7 +226,15 @@
                     </ul>
                 </li>
                 <li class="our-team-list__item">
-                    <img src="images/img-6.jpg" alt="Николай Тарасов – Marketing" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/kolia-desktop-1x.jpg 1x,
+                                                ./images/kolia-desktop-2x.jpg 2x">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/kolia-tablet-1x.jpg 1x,
+                                                ./images/kolia-tablet-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/kolia-mobile-1x.jpg 1x,
+                                                ./images/kolia-mobile-2x.jpg 2x">
+                            <img src="./images/kolia-desktop-1x.jpg" alt="Николай Тарасов – Marketing">
+                        </picture>
                     <h3 class="our-team-list__title">Николай Тарасов</h3>
                     <p  class="our-team-list__text">Marketing</p>
                     <ul class="our-team-contacts list">
@@ -240,7 +270,15 @@
                     </ul>
                 </li>
                 <li class="our-team-list__item">
-                    <img src="images/img-7.jpg" alt="Михаил Ермаков – UI Designer" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/misha-desktop-1x.jpg 1x,
+                                                ./images/misha-desktop-2x.jpg 2x">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/misha-tablet-1x.jpg 1x,
+                                                ./images/misha-tablet-2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/misha-mobile-1x.jpg 1x,
+                                                ./images/misha-mobile-2x.jpg 2x">
+                            <img src="./images/misha-desktop-1x.jpg" alt="Михаил Ермаков – UI Designer">
+                        </picture>
                     <h3 class="our-team-list__title">Михаил Ермаков</h3>
                     <p  class="our-team-list__text">UI Designer</p>
                     <ul class="our-team-contacts list">

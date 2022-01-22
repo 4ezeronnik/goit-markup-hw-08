@@ -101,13 +101,13 @@
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
 
 .footer-social-list__item {
-  display: flex;
   height: 44px;
   width: 44px;
 

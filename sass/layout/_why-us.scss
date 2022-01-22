@@ -14,7 +14,6 @@
   justify-content: center;
   align-items: center;
 
-  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: $background-color;
@@ -42,33 +41,29 @@
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-
-    & .characteristics__item + .characteristics__item {
-      margin-left: 30px;
-    }
   }
 
   .characteristics__item {
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
-
-      &:nth-child(2n + 1) {
-        margin-right: 30px;
-      }
     }
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
     }
   }
 
   .characteristics__paragraph {
-    width: 100%;
     color: $primary-text-color;
-    font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.7;
   }

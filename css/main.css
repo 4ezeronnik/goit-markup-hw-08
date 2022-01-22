@@ -322,7 +322,7 @@ ul {
   text-align: center;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -385,6 +385,7 @@ ul {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop-1x.jpg);
     background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-1x.jpg);
     background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-1x.jpg);
@@ -435,34 +436,67 @@ ul {
           border-radius: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .characteristics__box {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .characteristics__box {
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .characteristics__box {
     width: 270px;
   }
 }
 
-.characteristics {
-  display: block;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .characteristics {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .characteristics {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
   }
   .characteristics .characteristics__item + .characteristics__item {
     margin-left: 30px;
   }
 }
 
-.characteristics .characteristics__item {
-  display: block;
+@media screen and (min-width: 768px) {
+  .characteristics .characteristics__item {
+    -webkit-flex-basis: -webkit-calc((100% - 4 * 15px) / 2);
+        -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+            flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .characteristics .characteristics__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .characteristics .characteristics__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .characteristics .characteristics__paragraph {
-  max-width: 450px;
   width: 100%;
   color: #757575;
   font-family: Roboto, sans-serif;

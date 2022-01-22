@@ -3,16 +3,31 @@
 /* specialization-section  */
 
 .specialization-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .specialization-box {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 94px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 
   & .specialization-box__item + .specialization-box__item {
     margin-left: 8px;
@@ -25,16 +40,32 @@
 
 /* Card set */
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-bottom: calc(-1 * 30px);
+  }
 }
 
-.card-set__item {
-  margin-left: 30px;
-  margin-top: 30px;
+.samples-card {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 440px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
   border-bottom: 1px solid #eeeeee;
-  min-height: 404px;
   cursor: pointer;
 
   &:hover,
@@ -43,12 +74,21 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:nth-child(-n + 3) {
-    margin-top: 0;
-  }
+  // &:nth-child(-n + 3) {
+  //   margin-top: 0;
+  // }
 
-  &:nth-child(3n + 1) {
-    margin-left: 0;
+  // &:nth-child(3n + 1) {
+  //   margin-left: 0;
+  // }
+}
+
+.samples-card-content {
+  flex-grow: 1;
+  padding: 20px 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
   }
 }
 
@@ -56,8 +96,6 @@
   font-size: 16px;
   font-weight: 400px;
   line-height: 1.9;
-  padding-left: 24px;
-  margin-bottom: 12px;
 }
 
 .samples-card-content__title {
@@ -66,10 +104,12 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
+}
+
+.samples-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .samples-card__link:hover,

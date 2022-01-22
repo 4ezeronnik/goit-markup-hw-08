@@ -1239,9 +1239,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 40px;
-  margin-right: 41px;
-  margin-left: 39px;
   margin-bottom: 12px;
 }
 
@@ -1256,8 +1253,6 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -1353,6 +1348,8 @@ ul {
 }
 
 .policy-box {
+  font-size: 11px;
+  line-height: 1.2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1361,10 +1358,16 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 54px;
-  padding-right: 50px;
+  padding-left: 14px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-box {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .btn-checkbox {
@@ -1396,7 +1399,6 @@ ul {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   cursor: pointer;
 }
 
@@ -1423,10 +1425,6 @@ ul {
 }
 
 .policy-box__title {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1436,9 +1434,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 7px;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 .policy-box__link {

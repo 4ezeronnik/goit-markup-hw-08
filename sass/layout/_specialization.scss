@@ -53,7 +53,7 @@
 
 .samples-card {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 440px;
+    height: 404px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
@@ -86,9 +86,11 @@
 .samples-card-content {
   flex-grow: 1;
   padding: 20px 24px;
+  max-height: 110px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 354px;
+    min-height: 146px;
   }
 }
 

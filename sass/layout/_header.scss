@@ -64,7 +64,7 @@
     height: 100vw;
     overflow-y: scroll;
 
-    text-align: center;
+    padding: 48px 40px;
 
     background-color: $primary-white-color;
   }
@@ -267,13 +267,16 @@
 
 .mobile-social {
   display: inline-flex;
+  padding: 0;
 }
 
 .mobile-social__link {
   color: $accent-color;
-  padding-left: 10px;
   font-size: 18px;
   line-height: 1.2;
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
 }
 
 .site-nav__link.site-nav__link--active {

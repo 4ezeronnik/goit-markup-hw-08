@@ -234,7 +234,7 @@ ul {
     width: 100vw;
     height: 100vw;
     overflow-y: scroll;
-    text-align: center;
+    padding: 48px 40px;
     background-color: #ffffff;
   }
 }
@@ -465,13 +465,17 @@ ul {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 0;
 }
 
 .mobile-social__link {
   color: #2196f3;
-  padding-left: 10px;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.mobile-social__link:not(:first-child) {
+  padding-left: 10px;
 }
 
 .site-nav__link.site-nav__link--active {
@@ -699,6 +703,12 @@ ul {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .characteristics .characteristics__title {
+    text-align: center;
+  }
+}
+
 /* Секция "our-work-section" */
 .our-work-section {
   padding-top: 47px;
@@ -789,7 +799,7 @@ ul {
             flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     max-width: 354px;
-    min-height: 536px;
+    max-height: 536px;
   }
 }
 

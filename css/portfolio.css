@@ -234,7 +234,7 @@ ul {
     width: 100vw;
     height: 100vw;
     overflow-y: scroll;
-    text-align: center;
+    padding: 48px 40px;
     background-color: #ffffff;
   }
 }
@@ -465,13 +465,17 @@ ul {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 0;
 }
 
 .mobile-social__link {
   color: #2196f3;
-  padding-left: 10px;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.mobile-social__link:not(:first-child) {
+  padding-left: 10px;
 }
 
 .site-nav__link.site-nav__link--active {
@@ -587,7 +591,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .samples-card {
-    height: 440px;
+    height: 404px;
   }
 }
 
@@ -620,11 +624,13 @@ ul {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 20px 24px;
+  max-height: 110px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .samples-card-content {
     max-width: 354px;
+    min-height: 146px;
   }
 }
 

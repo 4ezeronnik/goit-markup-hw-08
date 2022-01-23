@@ -37,7 +37,7 @@
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     max-width: 354px;
-    min-height: 536px;
+    max-height: 536px;
   }
 
   @media screen and (min-width: 1200px) {

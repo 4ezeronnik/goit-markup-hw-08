@@ -233,7 +233,7 @@ ul {
     left: 0;
     width: 100vw;
     min-height: 100vw;
-    overflow-y: scroll;
+    height: 100%;
     padding: 48px 40px;
     background-color: #ffffff;
   }

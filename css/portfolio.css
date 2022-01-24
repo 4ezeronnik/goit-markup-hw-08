@@ -228,11 +228,11 @@ ul {
   .menu-container {
     display: none;
     position: fixed;
-    z-index: 50;
+    z-index: 55;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    min-height: 100vw;
     overflow-y: scroll;
     padding: 48px 40px;
     background-color: #ffffff;
@@ -250,7 +250,19 @@ ul {
 }
 
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .auth-nav-icon {
@@ -289,7 +301,6 @@ ul {
 @media screen and (max-width: 767px) {
   .site-nav {
     font-size: 40px;
-    margin-bottom: 302px;
   }
 }
 
@@ -461,10 +472,10 @@ ul {
 }
 
 .mobile-social {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0;
 }
 
@@ -485,6 +496,18 @@ ul {
 .mobile-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+}
+
+.mobile-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navigation {

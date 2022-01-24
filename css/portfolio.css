@@ -607,15 +607,38 @@ ul {
   }
 }
 
-.samples-card {
-  border-bottom: 1px solid #eeeeee;
-  cursor: pointer;
+.card-set__item {
+  max-height: 440px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .samples-card {
-    height: 404px;
+@media screen and (max-width: 767px) {
+  .card-set__item {
+    max-width: 450px;
   }
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    max-width: 370px;
+  }
+}
+
+.samples-card {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -642,24 +665,21 @@ ul {
 }
 
 .samples-card-content {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   padding: 20px 24px;
-  max-height: 110px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .samples-card-content {
     max-width: 354px;
-    min-height: 146px;
+  }
+  .samples-card-content:first-child {
+    padding-bottom: 56px;
   }
 }
 
 .samples-card-content__paragraph {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 1.9;
 }
 
@@ -672,15 +692,6 @@ ul {
 }
 
 .samples-card__link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 100%;
 }
 
@@ -727,6 +738,10 @@ ul {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+}
+
+.samples-card-content--height {
+  padding-bottom: 56px;
 }
 
 /* Подвал страницы / Футер */
